@@ -17,10 +17,10 @@ use yii\web\ServerErrorHttpException;
  *     // ...
  *     [
  *          'class' => 'coderovich\GridView\ButtonColumn', #Path to button's class
- *          'action' => '' #(delete|view|update|create) Required if urlCreator() is not set.
+ *          'action' => '', #(delete|view|update|create) Required if urlCreator() is not set.
  *          'btnCssClass' => 'btn btn-sm btn-small btn-default', #CSS Class (string|function(...)) Is optional.
  *          'iconCssClass' => 'fa fa-print', #CSS Class (string). Is optional.
- *          'title' => '' #Title for button (string|function(...)). Is optional.
+ *          'title' => '', #Title for button (string|function(...)). Is optional.
  *          #You can override the default button's CreateUrl behavior. Is optional.
  *          'urlCreator' => function ($action, $model, $key, $index) {
  *              return Url::to(['/controller/action','id'=>$key]);
