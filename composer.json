@@ -2,10 +2,10 @@
   "name": "coderovich/yii2-button-column",
   "description": "Button column for Yii 2",
   "keywords": [
-    "widget",
-    "yii2",
+    "Yii 2",
     "ButtonColumn",
-    "GridView"
+    "GridView",
+    "widget"
   ],
   "homepage": "https://github.com/coderovich/yii2-button-column",
   "type": "yii2-component",
