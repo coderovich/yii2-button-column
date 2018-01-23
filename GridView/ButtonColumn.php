@@ -43,6 +43,10 @@ class ButtonColumn extends ActionColumn {
 	public $title;
 	public $data = [];
 	public $type = 'link';
+
+    /**
+     * @var array Style definition
+     */
 	public $contentOptions = [ 'style' => 'width: 80px;text-align:center;' ];
 
 
