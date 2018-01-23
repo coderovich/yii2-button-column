@@ -4,7 +4,8 @@
   "keywords": [
     "widget",
     "yii2",
-    "adminLte"
+    "ButtonColumn",
+    "GridView"
   ],
   "homepage": "https://github.com/coderovich/yii2-button-column",
   "type": "yii2-component",
