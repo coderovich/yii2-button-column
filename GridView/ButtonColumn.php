@@ -42,6 +42,10 @@ class ButtonColumn extends ActionColumn {
 	public $action;
 	public $title;
 	public $data = [];
+
+    /**
+     * @var string type of button
+     */
 	public $type = 'link';
 
     /**
