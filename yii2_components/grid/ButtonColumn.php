@@ -8,7 +8,7 @@ use yii\grid\ActionColumn;
 use yii\web\ServerErrorHttpException;
 
 /**
- * ButtonColumn самая новая разработка от 2017 (обновлено 06.07.2017г)
+ * Here's an example of creating a GridView Button Column
  *
  * To add an ButtonColumnV2 to the gridview, add it to the [[GridView::columns|columns]] configuration as follows:
  *
@@ -16,13 +16,13 @@ use yii\web\ServerErrorHttpException;
  * 'columns' => [
  *     // ...
  *     [
- *          'class' => 'path\to\ButtonColumn',,
- *          'action' => 'ХХХХ' // обязательный параметр, если нет urlCreator()
- *          'btnCssClass' => 'btn btn-sm btn-small btn-default', // опционально или function($model){} опционально
- *          'iconCssClass' => 'fa fa-print', // опционально
-*           'title' => 'My title' // опционально или function($model){} опционально
- *          # Позволяет полностью перезаписать url кнопки
- *          'urlCreator' => function ($action, $model, $key, $index) { // опционально
+ *          'class' => 'coderovich\yii2_components\grid\ButtonColumn', #Path to button's class
+ *          'action' => '' #(delete|view|update|create) Required if urlCreator() is not set.
+ *          'btnCssClass' => 'btn btn-sm btn-small btn-default', #CSS Class (string|function(...)) Is optional.
+ *          'iconCssClass' => 'fa fa-print', #CSS Class (string). Is optional.
+ *          'title' => '' #Title for button (string|function(...)). Is optional.
+ *          #You can override the default button's CreateUrl behavior. Is optional.
+ *          'urlCreator' => function ($action, $model, $key, $index) {
  *              return Url::to(['/controller/action','id'=>$key]);
  *          }
  *     ],
@@ -33,7 +33,7 @@ use yii\web\ServerErrorHttpException;
  */
 class ButtonColumn extends ActionColumn {
 	/**
-	 * @var boolean позволяет деактивировать линк
+	 * @var boolean Disabled if true
 	 */
 	public $disabled;
 
@@ -54,7 +54,7 @@ class ButtonColumn extends ActionColumn {
 		parent::init();
 
 		if ( ! $this->action && ! $this->urlCreator ) {
-			throw new ServerErrorHttpException( 'ButtonColumn: An attribute @action or @urlCreator should be set.' );
+			throw new ServerErrorHttpException( 'Either @action attribute or @urlCreator should be set.' );
 		}
 
 		if ( ! $this->action ) {
@@ -74,11 +74,6 @@ class ButtonColumn extends ActionColumn {
 			$this->btnCssClass  = ! $this->btnCssClass ? 'btn  btn-sm btn-small btn-primary' : $this->btnCssClass;
 			$this->iconCssClass = ! $this->iconCssClass ? 'fa fa-plus' : $this->iconCssClass;
 		}
-		elseif ($this->action == 'mod') {
-			$this->btnCssClass = !$this->btnCssClass ? 'btn  btn-sm btn-small btn-primary' : $this->btnCssClass;
-			$this->iconCssClass = !$this->iconCssClass ? 'fa fa-search' : $this->iconCssClass;
-		}
-
 		$this->initMyCustomButton();
 	}
 
@@ -129,6 +124,6 @@ class ButtonColumn extends ActionColumn {
 				] );
 			}
 		};
-
+        return;
 	}
 }
