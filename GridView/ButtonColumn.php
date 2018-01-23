@@ -1,6 +1,6 @@
 <?php
 
-namespace coderovich\yii2_components\grid;
+namespace coderovich\GridView;
 
 use Yii;
 use yii\helpers\Html;
@@ -16,7 +16,7 @@ use yii\web\ServerErrorHttpException;
  * 'columns' => [
  *     // ...
  *     [
- *          'class' => 'coderovich\yii2_components\grid\ButtonColumn', #Path to button's class
+ *          'class' => 'coderovich\GridView\ButtonColumn', #Path to button's class
  *          'action' => '' #(delete|view|update|create) Required if urlCreator() is not set.
  *          'btnCssClass' => 'btn btn-sm btn-small btn-default', #CSS Class (string|function(...)) Is optional.
  *          'iconCssClass' => 'fa fa-print', #CSS Class (string). Is optional.
