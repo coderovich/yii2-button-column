@@ -1,0 +1,33 @@
+{
+  "name": "coderovich/yii2-button-column",
+  "description": "Button column for Yii 2",
+  "keywords": [
+    "widget",
+    "yii2",
+    "adminLte"
+  ],
+  "homepage": "https://github.com/coderovich/yii2-button-column",
+  "type": "yii2-component",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/coderovich/yii2-button-column/issues",
+    "source": "https://github.com/coderovich/yii2-button-column"
+  },
+  "authors": [
+    {
+      "name": "Sergei Pavlov",
+      "email": "spavlov@li.ru",
+      "homepage": "http://illine.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "^2.0.0",
+    "yiisoft/yii2-bootstrap": "^2.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "coderovich\\": ""
+    }
+  }
+}
