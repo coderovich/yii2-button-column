@@ -1,6 +1,6 @@
 <?php
 
-namespace backend\components\grid;
+namespace yii2_components\grid;
 
 use Yii;
 use yii\helpers\Html;
