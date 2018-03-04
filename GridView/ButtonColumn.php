@@ -59,7 +59,8 @@ class ButtonColumn extends ActionColumn {
 	}
 
 	public function init() {
-		parent::init();
+
+	    parent::init();
 
 		if ( ! $this->action && ! $this->urlCreator ) {
 			throw new ServerErrorHttpException( 'Either @action attribute or @urlCreator should be set.' );
