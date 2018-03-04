@@ -71,16 +71,16 @@ class ButtonColumn extends ActionColumn {
 			$this->data['confirm'] = Yii::t( 'yii', 'Are you sure you want to delete this item?' );
 			$this->data['method']  = 'POST';
 			$this->btnCssClass     = ! $this->btnCssClass ? 'btn btn-sm btn-small btn-danger' : $this->btnCssClass;
-			$this->iconCssClass    = ! $this->iconCssClass ? 'fa fa-trash-o' : $this->iconCssClass;
+			$this->iconCssClass    = ! $this->iconCssClass ? 'far fa-trash-alt' : $this->iconCssClass;
 		} elseif ( $this->action == 'view' ) {
 			$this->btnCssClass  = ! $this->btnCssClass ? 'btn  btn-sm btn-small btn-primary' : $this->btnCssClass;
-			$this->iconCssClass = ! $this->iconCssClass ? 'fa fa-eye' : $this->iconCssClass;
+			$this->iconCssClass = ! $this->iconCssClass ? 'fas fa-eye' : $this->iconCssClass;
 		} elseif ( $this->action == 'update' ) {
 			$this->btnCssClass  = ! $this->btnCssClass ? 'btn  btn-sm btn-small btn-success' : $this->btnCssClass;
-			$this->iconCssClass = ! $this->iconCssClass ? 'fa fa-pencil' : $this->iconCssClass;
+			$this->iconCssClass = ! $this->iconCssClass ? 'far fa-edit' : $this->iconCssClass;
 		} elseif ( $this->action == 'create' ) {
 			$this->btnCssClass  = ! $this->btnCssClass ? 'btn  btn-sm btn-small btn-primary' : $this->btnCssClass;
-			$this->iconCssClass = ! $this->iconCssClass ? 'fa fa-plus' : $this->iconCssClass;
+			$this->iconCssClass = ! $this->iconCssClass ? 'fas fa-plus' : $this->iconCssClass;
 		}
 		$this->initMyCustomButton();
 	}
