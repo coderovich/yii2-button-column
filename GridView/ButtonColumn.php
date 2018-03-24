@@ -10,13 +10,13 @@ use yii\web\ServerErrorHttpException;
 /**
  * Here's an example of creating a GridView Button Column
  *
- * To add an ButtonColumnV2 to the gridview, add it to the [[GridView::columns|columns]] configuration as follows:
+ * To add an Button Column to the gridview, add it to the [[GridView::columns|columns]] configuration as follows:
  *
  * ```php
  * 'columns' => [
  *     // ...
  *     [
- *          'class' => 'coderovich\GridView\ButtonColumn', #Path to button's class
+ *          'class' => 'coderovich\GridView\ButtonColumn',
  *          'action' => '', #(delete|view|update|create) Required if urlCreator() is not set.
  *          'btnCssClass' => 'btn btn-sm btn-small btn-default', #CSS Class (string|function(...)) Is optional.
  *          'iconCssClass' => 'fa fa-print', #CSS Class (string). Is optional.
