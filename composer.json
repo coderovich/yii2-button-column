@@ -1,6 +1,6 @@
 {
   "name": "coderovich/yii2-button-column",
-  "description": "Button column for Yii 2",
+  "description": "Grid columns for Yii 2",
   "keywords": [
     "Yii2",
     "ButtonColumn",
@@ -22,8 +22,8 @@
     }
   ],
   "require": {
-    "yiisoft/yii2": "2.*",
-    "rmrevin/yii2-fontawesome": "~2.9"
+    "yiisoft/yii2": "~2.0.15.0",
+    "cinghie/yii2-fontawesome": "*"
   },
   "autoload": {
     "psr-4": {
