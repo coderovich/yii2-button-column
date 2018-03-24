@@ -39,7 +39,7 @@ class ImageColumn extends DataColumn {
     public function init() {
         parent::init();
         $this->headerIconCssClass = !$this->headerIconCssClass ? 'far fa-image' : $this->headerIconCssClass;
-        $this->contentOptions = ['style' => 'width: ' . $this->columnWidth . 'px;text-align:center;'];
+        $this->contentOptions = ['style' => 'width: ' . $this->columnWidth . 'px;text-align:center;padding:1px;'];
     }
 
     protected function renderHeaderCellContent() {
