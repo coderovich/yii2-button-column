@@ -41,6 +41,7 @@ class SetColumn extends DataColumn
         return $value === null ? $this->grid->emptyCell : $html;
     }
 
+
     /**
      * @param mixed $model
      * @param mixed $key
