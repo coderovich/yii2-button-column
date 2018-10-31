@@ -113,6 +113,7 @@ class ButtonColumn extends ActionColumn {
             }
 
             $disabled = false;
+
             //todo: Check if disabled!
             if (is_callable($this->disabled)) {
                 $disabled = call_user_func($this->disabled, $model);
