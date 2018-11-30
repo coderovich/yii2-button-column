@@ -36,6 +36,7 @@ class SetColumn extends DataColumn {
 	 */
 	public $contentOptions = ['style' => 'text-align:center;'];
 
+
 	protected function renderDataCellContent($model, $key, $index) {
 		$value = $this->getDataCellValue($model, $key, $index);
 		$name = $this->getStatusName($model, $key, $index, $value);
