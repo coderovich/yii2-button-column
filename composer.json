@@ -22,7 +22,7 @@
     }
   ],
   "require": {
-    "yiisoft/yii2": "~2.0.15.0",
+    "yiisoft/yii2": "~2.0",
     "cinghie/yii2-fontawesome": "*"
   },
   "autoload": {
