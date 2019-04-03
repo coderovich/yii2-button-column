@@ -36,7 +36,7 @@ class SetColumn extends DataColumn {
 
 	protected function renderDataCellContent($model, $key, $index) {
 		$value = $this->getDataCellValue($model, $key, $index);
-		$class = ArrayHelper::getValue($this->cssCLasses, $model->{$this->attribute}, 'default');
+		$class = ArrayHelper::getValue($this->cssCLasses, ArrayHelper::getValue($model, $this->attribute), 'default');
 		$html = Html::tag('span', nl2br(Html::encode($value)), ['class' => 'label label-' . $class]);
 		return $value === null ? $this->grid->emptyCell : $html;
 	}
